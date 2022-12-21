@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Challenge</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><img src="img/logo.png" alt="logo Alura"></h1>
-    <input class="codigo" type="text" name="codigo" id="codigo">
+    
+    <div class="texto">
+        <textarea placeholder="Digite seu texto" name="texto" id="texto" cols="30" rows="10"></textarea>
+    </div>
+    
+    <input class="codigo" type="text" name="codigo" id="codigo" >
     <input type="button" value="Criptografar">
     <input type="button" value="Descriptografar">
     
+
     <div class="resultado">
         <img src="img/mulher.png" alt="mulher procurando algo">
         <p>nenhuma mensagem encontrada</p>
