@@ -1,7 +1,92 @@
-h1 {
-    padding: 1em 0 0 1em;
+* {
+    color: #0A3871;
+    font-family: Inter;
 }
 
-textarea{
+body {
+    background: #E5E5E5;
+    margin-left: 2em;
+}
+
+.ladoEsquerdo{
+    position: relative;
+    height: 60em;
+}
+
+h1 {
+    padding: 3em 0 0 1em;
+}
+
+.entrada textarea {
     resize: none;
+    border: none;
+    margin-left: 9em;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: #E5E5E5;
+    outline: none;
+}
+
+
+.entrada textarea::placeholder {
+    color: #0A3871;
+}
+
+.botoes {
+    width: 940px;
+    position: absolute;
+    bottom: 7em;
+    margin-left: 17em;
+    line-height: 3em;
+}
+
+.botoes input {
+    height: 67px;
+    width: 328px;
+    left: 0px;
+    top: 0px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #d8dfe8;
+    border: 1px solid #0A3871;
+    font-size: medium;
+}
+
+#azulEscuro {
+    background-color: #0A3871;
+    color: #E5E5E5;
+    margin-right: 3em;
+}
+
+.resultado{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    right: 4em;
+    top: 5em;
+    text-align: center;
+    border: solid white;
+    border-radius: 32px;
+    background-color: white;
+}
+
+.resultado img{
+    padding-top: 10em;
+    width: 100%;
+}
+
+#principal{
+    font-size: 24px;
+    line-height: 1.1em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+#segundario{
+    font-size: 16px;
+    line-height: 1.1em;
+    padding: 0 1em 0 1em;
 }

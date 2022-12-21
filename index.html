@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,26 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1><img src="img/logo.png" alt="logo Alura"></h1>
-    
-    <div class="texto">
-        <textarea placeholder="Digite seu texto" name="texto" id="texto" cols="30" rows="10"></textarea>
+    <div class="ladoEsquerdo">
+        <h1><img src="img/logo.png" alt="logo Alura"></h1>
+
+        <div class="entrada">
+            <textarea placeholder="Digite seu texto" name="texto" id="texto" cols="60" rows="10"></textarea>
+        </div>
+
+        <div class="botoes">
+            <p><img src="img/exclamacao.png" alt="ponto de exclamacao"> apenas letras minúsculas e sem acento</p>
+            <input id="azulEscuro" type="button" value="Criptografar">
+            <input type="button" value="Descriptografar">
+        </div>
     </div>
-    
-    <input class="codigo" type="text" name="codigo" id="codigo" >
-    <input type="button" value="Criptografar">
-    <input type="button" value="Descriptografar">
-    
 
     <div class="resultado">
         <img src="img/mulher.png" alt="mulher procurando algo">
-        <p>nenhuma mensagem encontrada</p>
-        <p>digite um texto que voce deseja criptografar ou descriptografar</p>
+        <p id="principal">Nenhuma mensagem encontrada</p>
+        <p id="segundario">Digite um texto que voce deseja criptografar ou descriptografar</p>
     </div>
 
     <footer>
@@ -31,4 +36,5 @@
     </footer>
 
 </body>
+
 </html>
