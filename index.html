@@ -15,19 +15,30 @@
     <div class="ladoEsquerdo">
         <h1><img src="img/logo.png" alt="logo Alura"></h1>
         <div class="entrada">
-            <textarea id="entrada" placeholder="Digite seu texto" name="texto" id="texto" cols="60" rows="10"></textarea>
+            <textarea id="entrada" placeholder="Digite seu texto" name="texto" id="texto" cols="60"
+                rows="10"></textarea>
         </div>
         <div class="botoes">
             <p><img src="img/exclamacao.png" alt="ponto de exclamacao"> apenas letras minúsculas e sem acento</p>
-            <input id="azulEscuro" type="button" value="Criptografar">
-            <input type="button" value="Descriptografar">
+            <input id="codificar" type="button" value="Criptografar">
+            <input id="decodificador" type="button" value="Descriptografar">
         </div>
     </div>
 
     <div class="resultado">
-        <img src="img/mulher.png" alt="mulher procurando algo">
-        <p id="principal">Nenhuma mensagem encontrada</p>
-        <p id="segundario">Digite um texto que voce deseja criptografar ou descriptografar</p>
+        <div id="inicio">
+            <img src="img/mulher.png" alt="mulher procurando algo">
+            <p id="principal">Nenhuma mensagem encontrada</p>
+            <p id="segundario">Digite um texto que voce deseja criptografar ou descriptografar</p>
+        </div>
+        <div id="final" style="visibility: hidden;">
+            <textarea name="resultadoCodigo" id="resultadoCodigo" cols="60" rows="20" readonly>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est.
+                Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis
+                fames id diam feugiat aliquet non egestas.
+            </textarea>
+            <input type="button" value="copiar">
+        </div>
     </div>
 
     <footer>
