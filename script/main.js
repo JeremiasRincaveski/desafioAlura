@@ -14,7 +14,7 @@ function descriptografar() {
 }
 
 function embaralharCodigo() {
-    codigoEmbaralhado = codigoLimpo
+    codigoEmbaralhado = codigoLimpo.toLowerCase()
     codigoEmbaralhado = codigoEmbaralhado.replace(/e/g, 'enter')
     codigoEmbaralhado = codigoEmbaralhado.replace(/i/g, 'imes')
     codigoEmbaralhado = codigoEmbaralhado.replace(/a/g, 'ai')
