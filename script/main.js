@@ -35,17 +35,14 @@ function desembaralhaCodigo() {
 }
 
 function limparTelaResultado(codigo) {
-    if (document.getElementById("inicio").style.display === "none") {
-        document.getElementById("inicio").style.display = "block"
-        document.getElementById("final").style.visibility = "hidden"
-    } else {
+    if (document.getElementById("inicio").style.display !== "none") {
         document.getElementById("inicio").style.display = "none"
         document.getElementById("final").style.visibility = "visible"
-        if (codigo === "" || codigo === " ")
-            document.getElementById("resultadoCodigo").value = "informe um texto"
-        else
-            document.getElementById("resultadoCodigo").value = codigo
     }
+    if (codigo === "" || codigo === " ")
+        document.getElementById("resultadoCodigo").value = "informe um texto"
+    else
+        document.getElementById("resultadoCodigo").value = codigo
 }
 
 function pegarValor() {
@@ -61,7 +58,6 @@ function copiarTexto() {
     texto.select()
     texto.setSelectionRange(0, 99999)
     document.execCommand("copy")
-    alert("texto copiado " + texto)
 }
 
 copiar.onclick = copiarTexto
