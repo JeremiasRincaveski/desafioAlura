@@ -3,19 +3,30 @@
     font-family: Inter;
 }
 
+html{
+    height: 100vh;
+    width: 100vh;
+}
+
 body {
     background: #E5E5E5;
     margin-left: 2em;
+    height: 100%;
+    width: 100%;
 }
 
 .ladoEsquerdo{
     position: relative;
-    height: 60em;
     width: 60%;
+    height: 100%;
 }
 
 h1 {
     padding: 3em 0 0 1em;
+}
+
+.entrada{
+    height: 80%;
 }
 
 .entrada textarea {
@@ -29,6 +40,9 @@ h1 {
     text-align: left;
     background-color: #E5E5E5;
     outline: none;
+    width: 100%;
+    height: 80%;
+    display: block;
 }
 
 
@@ -134,4 +148,22 @@ h1 {
     border-radius: 35px;
     background-color: white;
     transition: all 1s;
+}
+
+footer{
+    width: 100%;
+}
+
+@media screen and (max-width: 941px) {
+    .ladoEsquerdo{
+        width: 100%;
+    }
+
+    .ladoEsquerdo textarea{
+        height: 80%;
+    }
+
+    .resultado{
+        position: static;
+    }
 }
